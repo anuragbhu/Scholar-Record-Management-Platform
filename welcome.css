@@ -1,0 +1,82 @@
+@keyframes spin {
+  from{
+    transform: rotateY(0deg);
+    moz-transform: rotateY(0deg); //Firefox
+    ms-transform: rotateY(0deg); //Microsoft Browsers
+  }
+  to{
+    transform: rotateY(360deg);
+    moz-transform: rotateY(360deg); //Firefox
+    ms-transform: rotateY(360deg); //Microsoft Browsers
+  }
+}
+
+
+@-webkit-keyframes spin{
+  from{-webkit-transform: rotateY(0deg);}
+  to{-webkit-transform: rotateY(360deg);}
+}
+.imageSpin{
+  animation-name: spin;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  -webkit-animation-name: spin;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 5s;
+}
+
+.heading {
+  text-align: center;
+  display: inline-block;
+  position: absolute; 
+  visibility: visible; 
+  left: 325px; 
+  top: 1px; 
+}
+
+h1 {
+  font-size: 45px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+body {
+  margin: 0;
+}
+
+.ref_2 {
+  list-style-type: none;
+  margin: 0 33vw;
+  font-size: 4vh;
+  font-weight: bold;
+}
+
+nav{
+  width: 100vw;
+  background-color: grey;
+}
+
+.ref_1 {
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+}
+
+.img {
+    width: 86em;
+    height: auto;
+}
+
+.new {
+  width: 19%;
+  height: 19%;
+}
