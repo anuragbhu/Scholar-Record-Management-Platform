@@ -40,7 +40,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                 <li class="ref_2">SCHOLAR REGISTRATION PORTAL</li>
             </ul>
         </nav>  
-    </div>o
+    </div>
 
     <div class="page-header">
         <h1>Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to registration portal.</h1>
@@ -54,6 +54,9 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         <ul class="nav nav-pills nav-fill">
             <li class="nav-item">
                 <a class="nav-link active" href="form.html">Registration Form</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="record.php">Records</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link active" href="download.html">Downloads</a>

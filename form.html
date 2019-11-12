@@ -1,434 +1,201 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>BHU</title>
-	<link rel="stylesheet" type="text/css" href="bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="form.css">
-	<link rel="icon" type="img/png" href="UniversityIcon.png">
+  <title>BHU</title>
+  <link rel="stylesheet" type="text/css" href="bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="form.css">
+  <link rel="icon" type="img/png" href="UniversityIcon.png">
 </head>
 <body>
-		
-	<div>
-		<img src="BHU_Logo.jpg" width="9%" alt="ARE Visual Logo Mark" class="imageSpin" align="left">
-	 	<div class="heading">
-	 		<h1>BANARAS  HINDU  UNIVERSITY</h1>
-      		<h2>INSTITUTE OF SCIENCE</h2>
-      		<h3>DEPARTMENT  OF  COMPUTER  SCIENCE</h3>
-		</div>
-     	<img src="DoCS.jpg" width="13%" alt="ARE Visual Logo Mark" class="imageSpin" align="right">
-	</div><br><br><br><br><br><br><br><br>
-	
-	<div>
-		<nav>
-		 	<ul class="ref_1">
-				<li class="ref_2">SCHOLAR REGISTRATION PORTAL</li>
-			</ul>
-		</nav>	
-	</div><br>
+    
+  <div>
+    <img src="BHU_Logo.jpg" width="9%" alt="ARE Visual Logo Mark" class="imageSpin" align="left">
+    <div class="heading">
+      <h1>BANARAS  HINDU  UNIVERSITY</h1>
+          <h2>INSTITUTE OF SCIENCE</h2>
+          <h3>DEPARTMENT  OF  COMPUTER  SCIENCE</h3>
+    </div>
+      <img src="DoCS.jpg" width="13%" alt="ARE Visual Logo Mark" class="imageSpin" align="right">
+  </div><br><br><br><br><br><br><br><br>
+  
+  <div>
+    <nav>
+      <ul class="ref_1">
+        <li class="ref_2">SCHOLAR REGISTRATION PORTAL</li>
+      </ul>
+    </nav>  
+  </div><br>
 
   <div>
     <!-- As a heading -->
     <nav class="navbar navbar-light bg-light">
-        <span class="navbar-brand mb-0 h1">SIGN UP FORM</span>
+        <span class="navbar-brand mb-0 h1">REGISTRATION FORM</span>
     </nav>
     </div><br>  
 
-	<div class="form-group">
-      		<label for="session">Session</label>
-      		<select id="session" class="form-control">
-        		<option selected>Choose...</option>
-        		<option>2020-21</option>
-        		<option>2019-20</option>
-        	</select>
-    	</div>
+  <form action="form.php" method="post">
+        <div class="form-group">
+          <label for="session">Session</label>
+          <select id="session" class="form-control" name="session">
+            <option selected>Choose...</option>
+            <option value="2021">2020-21</option>
+            <option value="1920">2019-20</option>
+          </select>
+      </div>
 
-	<div>
-		<div class="row">
-    		<div class="col">
-    			<label>First Name</label>
-      			<input type="text" class="form-control" placeholder="Enter first name">
-    		</div>
-    		<div class="col">
-    			<label>Middle Name</label>
-      			<input type="text" class="form-control" placeholder="Enter middle name">
-    		</div>
-    		<div class="col">
-    			<label>Last Name</label>
-      			<input type="text" class="form-control" placeholder="Enter last name">
-      		</div>
-    	</div>
-  	</div><br>
+  <div>
+    <div class="row">
+        <div class="col">
+          <label for="fname">First Name</label>
+            <input id="fname"  name="fname" type="text" class="form-control" placeholder="Enter first name">
+        </div>
+        <div class="col">
+          <label for="mname">Middle Name</label>
+            <input id="mname" name="mname" type="text" class="form-control" placeholder="Enter middle name">
+        </div>
+        <div class="col">
+          <label for="lname">Last Name</label>
+            <input id="lname" name="lname" type="text" class="form-control" placeholder="Enter last name">
+          </div>
+      </div>
+    </div><br>
+    <div class="row">
+      <div class="form-group col-md-4">
+          <label for="type_course">Type of Course</label>
+          <select id="type_course" class="form-control" name="type_of_course">
+            <option selected>Choose...</option>
+            <option value="Undergaraduate">Undergraduate Programs</option>
+            <option value="Postgraguate">Postgraguate Programs</option>
+            <option value="Diploma">UG/PG Diploma Programs</option>
+            <option value="Special">Special Programs</option>
+            <option value="Research">Research Programs (Ph.D)</option>
+            <option value="Other">Other</option>
+          </select>
+      </div>
+      <div class="form-group col-md-4">
+          <label for="course">Select Course</label>
+          <select id="course" class="form-control" name="select_course">
+            <option selected>Choose...</option>
+            <option value="MCA">Master of Computer Application (MCA)</option>
+            <option value="MTTM">Master of Travel and Tourism (MTTM)</option>
+            <option value="MBA">Master of Business Administration (MBA)</option>
+            <option value="BSc">Bachelor of Science (B.Sc)</option>
+            <option value="BPharma">Bachelor of Pharmacy (B.Pharma)</option>
+            <option value="BCom">Bachelor of Commerce (B.Com)</option>
+            <option value="Other">Other</option>
+          </select>
+      </div>
+      <div class="form-group col-md-4">
+          <label for="course_year">Course Year</label>
+          <select id="course_year" class="form-control" name="course_year">
+            <option selected>Choose...</option>
+            <option value="1">I Year</option>
+            <option value="2">II Year</option>
+            <option value="3">III Year</option>
+            <option value="4">IV Year</option>
+          </select>
+      </div>
+    </div>
 
-  	<div class="row">
-  		<div class="form-group col-md-4">
-      		<label for="type_course">Type of Course</label>
-      		<select id="type_course" class="form-control">
-        		<option selected>Choose...</option>
-        		<option>Undergaraduate Programs</option>
-        		<option>Postgraguate Programs</option>
-        		<option>UG/PG Diploma Programs</option>
-        		<option>Special Programs</option>
-        		<option>Research Programs (Ph.D)</option>
-        		<option>Other</option>
-        	</select>
-    	</div>
-  		<div class="form-group col-md-4">
-      		<label for="course">Select Course</label>
-      		<select id="course" class="form-control">
-        		<option selected>Choose...</option>
-        		<option>Master of Computer Application (MCA)</option>
-        		<option>Master of Travel and Tourism (MTTM)</option>
-        		<option>Master of Business Administration (MBA)</option>
-        		<option>Bachelor of Science (B.Sc)</option>
-        		<option>Bachelor of Pharmacy (B.Pharma)</option>
-        		<option>Bachelor of Commerce (B.Com)</option>
-        		<option>Other</option>
-        	</select>
-    	</div>
-    	<div class="form-group col-md-4">
-      		<label for="course_year">Type of Course</label>
-      		<select id="course_year" class="form-control">
-        		<option selected>Choose...</option>
-        		<option>I Year</option>
-        		<option>II Year</option>
-        		<option>III Year</option>
-        		<option>IV Year</option>
-        	</select>
-    	</div>
-  	</div>
+    <label>Date of Birth (DOB)</label>
+    <div class="row">
+      <div class="col">
+          <label for="date">Date</label>
+          <select id="date" class="form-control" name="dates">
+            <option selected>Choose...</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+          </select>
+      </div>
+      <div class="col">
+          <label for="month">Month</label>
+          <select id="month" class="form-control" name="months">
+            <option selected>Choose...</option>
+            <option value="January">January</option>
+            <option value="Febuary">Febuary</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+          </select>
+      </div>
+      <div class="col">
+          <label for="year">Year</label>
+          <select id="year" class="form-control" name="years">
+            <option selected>Choose...</option>
+            <option value="1996">1996</option>
+            <option value="1997">1997</option>
+            <option value="1998">1998</option>
+            <option value="1999">1999</option>
+            <option value="2000">2000</option>
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+            <option value="2003">2003</option>
+            <option value="2004">2004</option>
+            <option value="2005">2005</option>
+            <option value="2006">2006</option>
+          </select>
+      </div>    
+    </div><br>
+    <div class="row">
+      <div class="col">
+        <label for="registration_no">University Registration Number</label>
+        <input type="text" class="form-control" id="registration_no" name="registration_no" placeholder="Enter registration number">
+      </div>
+      <div class="col">
+        <label for="exam_roll">Exam Roll Number</label>
+        <input type="text" class="form-control" id="exam_roll" name="exam_roll" placeholder="Enter exam roll number">
+      </div>
+      <div class="col">
+        <label for="class_roll">Class Roll Number</label>
+        <input type="text" class="form-control" id="class_roll" name="class_roll" placeholder="Enter class roll number">
+      </div>  
+    </div><br>
 
-  	<label>Date of Birth (DOB)</label>
-  	<div class="row">
-  		<div class="col">
-      		<label for="date">Date</label>
-      		<select id="date" class="form-control">
-        		<option selected>Choose...</option>
-        		<option>1</option>
-        		<option>2</option>
-        		<option>3</option>
-        		<option>4</option>
-        		<option>5</option>
-        		<option>6</option>
-        		<option>7</option>
-        		<option>8</option>
-        		<option>9</option>
-        		<option>10</option>
-        		<option>11</option>
-        		<option>12</option>
-        		<option>13</option>
-        		<option>14</option>
-        		<option>15</option>
-        		<option>16</option>
-        		<option>17</option>
-        		<option>18</option>
-        		<option>19</option>
-        		<option>20</option>
-        		<option>21</option>
-        		<option>22</option>
-        		<option>23</option>
-        		<option>24</option>
-        		<option>25</option>
-        		<option>26</option>
-        		<option>27</option>
-        		<option>28</option>
-        		<option>29</option>
-        		<option>30</option>
-        		<option>37</option>
-        	</select>
-    	</div>
-    	<div class="col">
-      		<label for="month">Month</label>
-      		<select id="month" class="form-control">
-        		<option selected>Choose...</option>
-        		<option>January</option>
-        		<option>Febuary</option>
-        		<option>March</option>
-        		<option>April</option>
-        		<option>May</option>
-        		<option>June</option>
-        		<option>July</option>
-        		<option>August</option>
-        		<option>September</option>
-        		<option>October</option>
-        		<option>November</option>
-        		<option>December</option>
-        	</select>
-    	</div>
-    	<div class="col">
-      		<label for="year">Year</label>
-      		<select id="year" class="form-control">
-        		<option selected>Choose...</option>
-        		<option>1996</option>
-        		<option>1997</option>
-        		<option>1998</option>
-        		<option>1999</option>
-        		<option>2000</option>
-        		<option>2001</option>
-        		<option>2002</option>
-        		<option>2003</option>
-        		<option>2004</option>
-        		<option>2004</option>
-        		<option>2005</option>
-        		<option>2006</option>
-        	</select>
-    	</div>		
-  	</div><br>
-
-  	<div class="row">
-  		<div class="col">
-    		<label for="registration_no">University Registration Number</label>
-    		<input type="text" class="form-control" id="registration_no" placeholder="Enter registration number">
-  		</div>
-  		<div class="col">
-    		<label for="exam_roll">Exam Roll Number</label>
-    		<input type="text" class="form-control" id="exam_roll" placeholder="Enter exam roll number">
-  		</div>
-  		<div class="col">
-    		<label for="class_roll">Class Roll Number</label>
-    		<input type="text" class="form-control" id="class_roll" placeholder="Enter class roll number">
-  		</div>	
-  	</div><br>
-
-  	<div class="form-group">
-    	<label for="exampleInputEmail1">Email address</label>
-    	<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter primary email">
-    	<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  	</div>
-
-  	<!-- <div class="form-group">
-    	<label for="exampleInputPassword1">Password</label>
-    	<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter password for login purpose">
-  	</div> -->
-
-  	<div class="form-group">
-    	<label for="exampleInputEmail1_sec">Email address</label>
-    	<input type="email" class="form-control" id="exampleInputEmail1_sec" aria-describedby="emailHelp" placeholder="Enter secondary email">
-    	<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  	</div>
-
-  	<div class="row">
-  		<div class="col">
-    		<label for="contact_pri">Primary Contact Nunber</label>
-    		<input type="text" class="form-control" id="contact_pri" placeholder="Enter primary contact number">
-  		</div>
-  		<div class="col">
-    		<label for="contact_sec">Secondary Contact Nunber</label>
-    		<input type="text" class="form-control" id="contact_sec" placeholder="Enter secodary contact number">
-  		</div>
-  	</div><br>
-
-  	<div class="row">
-  		<div class="col">
-    		<label for="nationality">Nationality</label>
-    		<input type="text" class="form-control" id="nationality" placeholder="Enter nationality">
-  		</div>
-  		<div class="form-group col-md-4">
-      		<label for="religion">Religion</label>
-      		<select id="religion" class="form-control">
-        		<option selected>Choose...</option>
-        		<option>Christian</option>
-        		<option>Jain</option>
-        		<option>Hindu</option>
-        		<option>Muslim</option>
-        		<option>Sikh</option>
-        	</select>
-    	</div>
-  		<div class="form-group col-md-4">
-      		<label for="caste">Caste</label>
-      		<select id="caste" class="form-control">
-        		<option selected>Choose...</option>
-        		<option>General</option>
-        		<option>OBC (NCL)</option>
-        		<option>SC</option>
-        		<option>ST</option>
-        		<option>EWS</option>
-        	</select>
-    	</div>
-  	</div>
-
-  	<div class="row">
-  		<div class="form-group col-md-4">
-      		<label for="seat">Paid Seat Student</label>
-      		<select id="seat" class="form-control">
-        		<option selected>Choose...</option>
-        		<option>Yes</option>
-        		<option>No</option>
-        	</select>
-    	</div>
-  		<div class="form-group col-md-4">
-      		<label for="ward">Employee Ward</label>
-      		<select id="ward" class="form-control">
-        		<option selected>Choose...</option>
-        		<option>Yes</option>
-        		<option>No</option>
-        	</select>
-    	</div>
-    	<div class="form-group col-md-4">
-      		<label for="pwsd">P.H. Student</label>
-      		<select id="pwd" class="form-control">
-        		<option selected>Choose...</option>
-        		<option>Yes</option>
-        		<option>No</option>
-        	</select>
-    	</div>
-  	</div>
-
-  	<label>Marriage Status :</label>
-  	<div class="row">
-  		<div class="col">
-  			<div class="form-check">
-	  			<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-	  			<label class="form-check-label" for="exampleRadios1">
-    				Married
-  			 	</label>
-			</div>
-  		</div>
-  		<div class="col">
-  			<div class="form-check">
-  				<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-  				<label class="form-check-label" for="exampleRadios1">
-    				Un-married
-  				</label>
-			</div>
-  		</div>
-  	</div><br>
-
-  	<div class="row">
-  		<div class="form-group col-md-4">
-      		<label for="stay">Type of Residence</label>
-      		<select id="stay" class="form-control">
-        		<option selected>Choose...</option>
-        		<option>Day Scholar</option>
-        		<option>Hostler</option>
-        	</select>
-    	</div>
-  		<div class="col">
-    		<label for="hostel_name">Hostel Name (if any)</label>
-    		<input type="text" class="form-control" id="hostel_name" placeholder="Enter hostel name">
-  		</div>
-  		<div class="col">
-    		<label for="hostel_room">Hostel Room Number (if any)</label>
-    		<input type="text" class="form-control" id="hostel_room" placeholder="Enter hostel room number">
-  		</div>
-  	</div>
-
-  	<div class="row">
-    	<div class="col">
-    		<label>Father's First Name</label>
-      		<input type="text" class="form-control" placeholder="Enter father's first name">
-    	</div>
-    	<div class="col">
-    		<label>Father's Middle Name</label>
-      		<input type="text" class="form-control" placeholder="Enter father's middle name">
-    	</div>
-    	<div class="col">
-    		<label>Father's Last Name</label>
-      		<input type="text" class="form-control" placeholder="Enter father's last name">
-    	</div>
-  	</div><br>
-
-  	<div class="row">
-  		<div class="col">
-    		<label for="f_occupation">Occupation</label>
-    		<input type="text" class="form-control" id="f_occupation" placeholder="Enter father's occupation">
-  		</div>
-  		<div class="col">
-    		<label for="f_contact">Father's Contact Nunber</label>
-    		<input type="text" class="form-control" id="f_contact" placeholder="Enter father's contact number">
-  		</div>
-  	</div><br>
-
-  	<div class="row">
-    	<div class="col">
-    		<label>Mother's First Name</label>
-      		<input type="text" class="form-control" placeholder="Enter mother's first name">
-    	</div>
-    	<div class="col">
-    		<label>Mother's Middle Name</label>
-      		<input type="text" class="form-control" placeholder="Enter mother's middle name">
-    	</div>
-    	<div class="col">
-    		<label>Mother's Last Name</label>
-      		<input type="text" class="form-control" placeholder="Enter mother's last name">
-    	</div>
-  	</div><br>
-
-  	<div class="row">
-  		<div class="col">
-    		<label for="m_occupation">Occupation</label>
-    		<input type="text" class="form-control" id="m_occupation" placeholder="Enter mother's occupation">
-  		</div>
-  		<div class="col">
-    		<label for="m_contact">Mother's Contact Nunber</label>
-    		<input type="text" class="form-control" id="m_contact" placeholder="Enter mother's contact number">
-  		</div>
-  	</div><br>
-
-  	<div class="form-group">
-    	<label for="inputAddress">Address 1</label>
-    	<input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-  	</div>
-
-  	<div class="form-group">
-    	<label for="inputAddress2">Address 2</label>
-    	<input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-  	</div>
-
-  	<div class="form-row">
-    	<div class="form-group col-md-6">
-      		<label for="inputCity">City</label>
-      		<input type="text" class="form-control" id="inputCity" placeholder="Enter city">
-    	</div>
-    	<div class="form-group col-md-4">
-      		<label for="inputState">State</label>
-      		<select id="inputState" class="form-control">
-        		<option selected>Choose...</option>
-        		<option>Bihar</option>
-        		<option>Delhi</option>
-        		<option>Haryana</option>
-        		<option>Jharkhand</option>
-        		<option>Madhya Pradesh</option>
-        		<option>Uttar Pradesh</option>
-        		<option>Uttrakhand</option>
-        		<option>West Bengal</option>
-        	</select>
-    	</div>
-    	<div class="form-group col-md-2">
-      				<label for="inputPin">Pin Code</label>
-      				<input type="text" class="form-control" id="inputPin" placeholder="Enter pincode">
-    	</div>
-  	</div>
-
-  	<div class="row">
-  		<div class="col">
-  			<div class="form-group">
-    			<label for="photograph">Photograph</label>
-    			<input type="file" class="form-control-file" id="photograph">
-  			</div>
-  		</div>
-  		<div class="col">
-  			<div class="form-group">
-    			<label for="signature">Signature</label>
-    			<input type="file" class="form-control-file" id="signature">
-  			</div>
-  		</div>
-  		<div class="col">
-  			<div class="form-group">
-    			<label for="thumb">Thumb Impression</label>
-    			<input type="file" class="form-control-file" id="thumb">
-  			</div>
-  		</div>
-  	</div>
-
-  	<div class="form-group form-check">
-    	<input type="checkbox" class="form-check-input" id="exampleCheck1">
-    	<label class="form-check-label" for="exampleCheck1">Check me out</label>
-  	</div>
-
-  	<div>
-  		<button type="submit" class="btn btn-primary">Submit</button>
-	</div>
-
-	
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" name="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter primary email">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    
+    <div>
+      <button type="submit" class="btn btn-primary" value="submit" name="submit">Submit</button>
+  </div>
+  </form>
 </body>
 </html>

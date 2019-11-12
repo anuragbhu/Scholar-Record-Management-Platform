@@ -35,29 +35,29 @@
 
     <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within a matter of hours to help you.</p>
 
-	<form>
+	<form action="report.php" method="post">
   		<div class="form-group">
     		<label for="exampleFormControlInput1">Email address</label>
-    		<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    		<input type="email" class="form-control" id="exampleFormControlInput1" name="exampleFormControlInput1" placeholder="name@example.com">
   		</div>
 
   		<div class="form-group">
     		<label for="exampleFormControlSelect1">Select Issue</label>
-    		<select class="form-control" id="exampleFormControlSelect1">
+    		<select class="form-control" id="exampleFormControlSelect1" name="exampleFormControlSelect1">
     			<option>Select Option</option>
-      			<option>Problem in Sign In</option>
-      			<option>Problem in Sign Up</option>
-      			<option>Facing problem related to Downloads</option>
-      			<option>Any other Issue</option>
+      			<option value="1">Problem in Sign In</option>
+      			<option value="2">Problem in Sign Up</option>
+      			<option value="3">Facing problem related to Downloads</option>
+      			<option value="0">Any other Issue</option>
     		</select>
   		</div>
 
   		<div class="form-group">
     		<label for="exampleFormControlTextarea1">Message</label>
-  		  	<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  		  	<textarea class="form-control" id="exampleFormControlTextarea1" name="exampleFormControlTextarea1" rows="3"></textarea>
   		</div>
 
-  		<button type="submit" class="btn btn-primary">Submit</button>
+  		<button type="submit" class="btn btn-primary" value="submit" name="submit">Submit</button>
 
 	</form>
 
